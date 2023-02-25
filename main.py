@@ -83,7 +83,7 @@ class Wordle:
         }
         # print(f"dict = \n {colour_dict}")
         for letter_index in range(len(guess)):
-            printable_string += colours[colour_dict[letter_index]] + guess[letter_index]
+            printable_string += colours[colour_dict[letter_index]] + guess[letter_index].upper()
             # print(printable_string)
         printable_string += "\033[0m"
         self.current_board = printable_string
@@ -107,12 +107,19 @@ def run_game(answer: str = None):
         print(game)
         total_guesses += 1
 
+        if game.state() == 2:
+            print(f"You lost! The right answer was \033[4m{answer.upper()}\033[0m")
+            break
+        elif game.state() == 1:
+            print("You won!")
+            break
+
 
 
 
 
 if __name__ == '__main__':
-    run_game("crane")
+    run_game("crank")
 
 
 
