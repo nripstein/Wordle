@@ -2,8 +2,11 @@
 A colour-accurate command-line implementation of the addictive word-guessing game in Python.
 
 ## Screenshot of Gameplay
-<img width="214" alt="Wordle gameplay screenshot" src="https://user-images.githubusercontent.com/98430636/221374455-34679d49-1aaf-4dad-af47-a619424af7d1.png">
 
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/98430636/221375146-57cc25a2-1c03-43fd-92dc-14ceeb8b898c.png" width=40% />
+  <img src="https://user-images.githubusercontent.com/98430636/221375149-c8db5679-328c-43b0-802f-352d11a1e019.png" width=46.5% /> 
+</p>
 
 ## How to Play
 1. Run the main.py file. Set the desired answer as an argument for the run_game() function, or leave it blank for a random one to be selected
